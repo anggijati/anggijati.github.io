@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Anggi - Multi-Disciplinary Systems & Full-Stack Developer.">
+  <meta name="theme-color" content="#020617">
+  <title>AnggiDesk - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <!-- ======================================================================
+     SITE HEADER & NAVIGATION
+     ====================================================================== -->
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#hero" aria-label="AnggiDesk home">
+        Anggi<span class="brand-accent">Desk</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Portofolio</a>
+        <a href="#work">Work</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ganti tema">
+          <span data-theme-label>Light Mode</span>
+        </button>
+
+        <a class="nav-cta" href="#contact">Contact Me</a>
+
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Buka menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-menu" data-mobile-menu aria-label="Navigasi mobile" hidden>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Portofolio</a>
+      <a href="#work">Work</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         HERO SECTION
+         ====================================================================== -->
+    <section class="hero section-wrap" id="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Multi-Disciplinary Systems &amp; Full-Stack Developer</p>
+        <h1 class="hero-title" id="hero-title">Hi, I'm Anggi</h1>
+        <p class="hero-text">Multi-Disciplinary Engineer with deep experience across Frontend, Backend, IoT &amp;
+          Embedded Hardware, and Server Infrastructure. Passionate about creating practical, responsive, and resilient
+          applications while bridging the gap from physical silicon to polished user interfaces.</p>
+
+        <div class="button-row" aria-label="Aksi utama">
+          <a class="btn btn-primary" href="#projects">See My Work</a>
+          <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+          <a class="btn btn-secondary" href="#contact">Download CV</a>
+        </div>
+
+        <div class="social-row" aria-label="Link sosial">
+          <a class="chip" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="chip" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="chip" href="https://gitlab.com" target="_blank" rel="noopener noreferrer">GitLab</a>
+          <a class="chip" href="https://threads.net" target="_blank" rel="noopener noreferrer">Threads</a>
+          <a class="chip" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a class="chip" href="mailto:anggi.engineer@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <aside class="focus-card" aria-label="Ringkasan portfolio">
+        <div class="window-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p class="overline">Current Focus</p>
+        <h3>Production-ready systems with thoughtful execution across hardware and cloud.</h3>
+        <p>I build practical interfaces, low-latency microservices, and reliable IoT telemetry pipelines that are clear
+          to use, easy to maintain, and ready to ship.</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span>Portfolios</span>
+            <strong>3 shipped</strong>
+          </div>
+          <div class="stat-card">
+            <span>Tech Stack</span>
+            <strong>5 tools</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ======================================================================
+         SKILLS SECTION ("WHAT I DO")
+         ====================================================================== -->
+    <section class="content-section section-wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="overline">What I Do</p>
+        <h2 id="skills-title">Skills and technologies I use to ship polished products</h2>
+      </div>
+
+      <div class="cards-grid">
+        <article class="panel-card">
+          <h3>Frameworks &amp; Frontend</h3>
+          <ul class="skill-list">
+            <li>ReactJS</li>
+            <li>NextJS</li>
+            <li>NestJS</li>
+            <li>FastAPI / Spring</li>
+            <li>Tailwind CSS &amp; WebGL</li>
+          </ul>
+          <a class="small-link" href="#contact">Show all</a>
+        </article>
+
+        <article class="panel-card">
+          <h3>Languages &amp; Core</h3>
+          <ul class="skill-list">
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Go (Golang)</li>
+            <li>Python</li>
+            <li>PHP &amp; C / C++</li>
+          </ul>
+          <a class="small-link" href="#contact">Show all</a>
+        </article>
+
+        <article class="panel-card">
+          <h3>Tools, Cloud &amp; IoT</h3>
+          <ul class="skill-list">
+            <li>Docker &amp; K8s</li>
+            <li>Linux Server</li>
+            <li>Nginx</li>
+            <li>ESP32 / FreeRTOS</li>
+            <li>MQTT &amp; GitLab CI</li>
+          </ul>
+          <a class="small-link" href="#contact">Show all</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PORTOFOLIO SECTION
+         ====================================================================== -->
+    <section class="content-section section-wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-bar">
+        <div>
+          <p class="eyebrow">PORTFOLIO SHOWCASE</p>
+          <h2 id="projects-title">Portofolio</h2>
+        </div>
+        <div class="section-bar-actions">
+          <span class="small-link" id="projectCountBadge">Total 3 Proyek</span>
+          <button type="button" class="btn-primary-sm" id="btnAddNewProject" aria-label="Tambah proyek baru">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <span>Tambah Proyek</span>
+          </button>
+          <button type="button" class="btn-secondary-sm" id="btnResetProjects" title="Kembalikan ke proyek awal">
+            <span>Reset Default</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="cards-grid" id="projectsGrid">
+        <!-- Project 1: SI-BARANG -->
+        <article class="project-card" data-project-id="proj_1">
+          <a href="#galleryModal" class="project-thumb-link" data-gallery-trigger="0" aria-label="Lihat detail SI-BARANG">
+            <div class="project-thumb has-image">
+              <img src="assets/images/sisekolah-cover.svg" alt="SI-BARANG Preview" loading="lazy" class="card-thumb-img">
+            </div>
+          </a>
+
+          <div class="project-body">
+            <p class="card-kicker">Sistem Informasi Inventaris Barang</p>
+            <h3>
+              <a href="#galleryModal" class="project-title-link" data-gallery-trigger="0">
+                SI-BARANG
+              </a>
+            </h3>
+            <p>Aplikasi sistem informasi sekolah lengkap dengan kontrol akses multi-role (Superadmin, Admin, Staff), kalkulasi transaksi stok otomatis, dan dokumen laporan siap cetak.</p>
+
+            <div class="tag-row" aria-label="Teknologi">
+              <span>PHP 8</span>
+              <span>MySQL</span>
+              <span>Bootstrap / CSS</span>
+              <span>RBAC</span>
+              <span>Inventory System</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button type="button" class="btn-card-detail" data-gallery-trigger="0">
+                <span>Lihat Detail &amp; Gallery</span>
+                <span aria-hidden="true">→</span>
+              </button>
+
+              <a href="https://anggilop.freedev.app/projects/db_sekolah/" target="_blank" rel="noopener noreferrer" class="btn-card-demo" title="Buka Live Demo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <span>Demo</span>
+              </a>
+            </div>
+
+            <div class="project-card-admin-bar">
+              <button type="button" class="btn-admin-pill edit" data-edit-id="proj_1" title="Edit proyek ini">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                </svg>
+                <span>Edit Proyek</span>
+              </button>
+              <button type="button" class="btn-admin-pill delete" data-delete-id="proj_1" title="Hapus proyek ini">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                <span>Hapus</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Project Beta -->
+        <article class="project-card" data-project-id="proj_2">
+          <a href="#galleryModal" class="project-thumb-link" data-gallery-trigger="1" aria-label="Lihat detail Project Beta">
+            <div class="project-thumb theme-thumb-2">
+              <span>P</span>
+            </div>
+          </a>
+
+          <div class="project-body">
+            <p class="card-kicker">Digital Service Platform</p>
+            <h3>
+              <a href="#galleryModal" class="project-title-link" data-gallery-trigger="1">
+                Project Beta
+              </a>
+            </h3>
+            <p>Platform layanan digital yang fokus pada alur pengguna sederhana, responsive UI, dan performa cepat.</p>
+
+            <div class="tag-row" aria-label="Teknologi">
+              <span>JavaScript</span>
+              <span>UX</span>
+              <span>Performance</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button type="button" class="btn-card-detail" data-gallery-trigger="1">
+                <span>Lihat Detail &amp; Gallery</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="project-card-admin-bar">
+              <button type="button" class="btn-admin-pill edit" data-edit-id="proj_2" title="Edit proyek ini">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                </svg>
+                <span>Edit Proyek</span>
+              </button>
+              <button type="button" class="btn-admin-pill delete" data-delete-id="proj_2" title="Hapus proyek ini">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                <span>Hapus</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Project Gamma -->
+        <article class="project-card" data-project-id="proj_3">
+          <a href="#galleryModal" class="project-thumb-link" data-gallery-trigger="2" aria-label="Lihat detail Project Gamma">
+            <div class="project-thumb theme-thumb-3">
+              <span>P</span>
+            </div>
+          </a>
+
+          <div class="project-body">
+            <p class="card-kicker">Company Profile &amp; SEO</p>
+            <h3>
+              <a href="#galleryModal" class="project-title-link" data-gallery-trigger="2">
+                Project Gamma
+              </a>
+            </h3>
+            <p>Website company profile responsif dengan struktur konten yang mudah dirawat dan ramah mesin pencari.</p>
+
+            <div class="tag-row" aria-label="Teknologi">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>SEO</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button type="button" class="btn-card-detail" data-gallery-trigger="2">
+                <span>Lihat Detail &amp; Gallery</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="project-card-admin-bar">
+              <button type="button" class="btn-admin-pill edit" data-edit-id="proj_3" title="Edit proyek ini">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                </svg>
+                <span>Edit Proyek</span>
+              </button>
+              <button type="button" class="btn-admin-pill delete" data-delete-id="proj_3" title="Hapus proyek ini">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                <span>Hapus</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION
+         ====================================================================== -->
+    <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div class="avatar" aria-hidden="true">Ang</div>
+        <div class="contact-copy">
+          <p class="overline">Contact</p>
+          <h2 id="contact-title">Anggi</h2>
+          <p class="role-text">Multi-Disciplinary Systems &amp; Full-Stack Developer</p>
+          <p>Building practical digital experiences, embedded hardware, and distributed cloud systems with modern
+            technologies.</p>
+
+          <a class="email-line" href="mailto:anggi.engineer@gmail.com">
+            <span aria-hidden="true">@</span>
+            anggi.engineer@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:anggi.engineer@gmail.com">Contact Me</a>
+          <a class="btn btn-secondary" href="mailto:anggi.engineer@gmail.com">Send Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+     SITE FOOTER
+     ====================================================================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 AnggiDesk. All rights reserved.</p>
+  </footer>
+
+  <!-- ======================================================================
+     INTERACTIVE FULLSCREEN LIGHTBOX MODAL (FALDESK / SKYTECH STYLE)
+     ====================================================================== -->
+  <div class="gallery-modal" id="galleryModal" hidden aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modalImageTitle">
+    <div class="gallery-modal-backdrop" data-gallery-backdrop></div>
+
+    <div class="gallery-modal-shell">
+      <header class="gallery-modal-header">
+        <div class="gallery-modal-title-wrap">
+          <p class="modal-project-tag" id="modalProjectTag">PORTOFOLIO SHOWCASE</p>
+          <h3 class="modal-image-title" id="modalImageTitle">Gallery Preview</h3>
+        </div>
+
+        <div class="gallery-modal-actions">
+          <span class="modal-counter-badge" id="modalImageCounter">1 / 3</span>
+          <button class="btn-modal-close" type="button" data-gallery-close aria-label="Tutup modal">Tutup</button>
+        </div>
+      </header>
+
+      <div class="gallery-modal-stage">
+        <button class="modal-nav-arrow prev" type="button" data-gallery-prev
+          aria-label="Gambar sebelumnya">&#8249;</button>
+
+        <div class="modal-image-container">
+          <img id="modalMainImage" class="modal-main-img" src="" alt="Project Showcase">
+        </div>
+
+        <button class="modal-nav-arrow next" type="button" data-gallery-next
+          aria-label="Gambar selanjutnya">&#8250;</button>
+      </div>
+
+      <footer class="gallery-modal-footer">
+        <p class="modal-image-desc" id="modalImageDesc"></p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+     MODAL EDITOR PROYEK (TAMBAH / EDIT PROYEK)
+     ====================================================================== -->
+  <div class="editor-modal" id="projectEditorModal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="editorModalTitle">
+    <div class="editor-modal-backdrop" id="editorBackdrop"></div>
+    <div class="editor-modal-shell">
+      <header class="editor-modal-header">
+        <div>
+          <p class="editor-modal-subtitle">PORTOFOLIO MANAGER</p>
+          <h3 class="editor-modal-title" id="editorModalTitle">Tambah Proyek Baru</h3>
+        </div>
+        <button type="button" class="btn-modal-close" id="btnCancelEditor" aria-label="Tutup modal">✕</button>
+      </header>
+
+      <form class="editor-form" id="projectForm">
+        <input type="hidden" id="editProjectId" value="">
+
+        <div class="form-group">
+          <label for="formProjTitle">Judul Proyek *</label>
+          <input type="text" id="formProjTitle" class="form-input" placeholder="contoh: SI-SEKOLAH" required>
+        </div>
+
+        <div class="form-group">
+          <label for="formProjKicker">Kategori / Kicker *</label>
+          <input type="text" id="formProjKicker" class="form-input" placeholder="contoh: Sistem Informasi Sekolah" required>
+        </div>
+
+        <div class="form-group">
+          <label for="formProjDesc">Deskripsi Proyek *</label>
+          <textarea id="formProjDesc" class="form-textarea" rows="3" placeholder="Jelaskan fitur, alur kerja, dan keunggulan proyek..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="formProjTags">Teknologi / Stack (pisahkan dengan koma) *</label>
+          <input type="text" id="formProjTags" class="form-input" placeholder="contoh: PHP 8, MySQL, Bootstrap, RBAC" required>
+        </div>
+
+        <div class="form-group">
+          <label for="formProjDemo">Link Live Demo (opsional)</label>
+          <input type="text" id="formProjDemo" class="form-input" placeholder="https://anggilop.freedev.app/projects/db_sekolah/">
+        </div>
+
+        <div class="form-group">
+          <label for="formThumbType">Tipe Thumbnail / Cover</label>
+          <select id="formThumbType" class="form-select">
+            <option value="image">Cover Gambar / SVG File</option>
+            <option value="theme-thumb-2">Preset P (Ungu - Digital Platform)</option>
+            <option value="theme-thumb-3">Preset P (Tosca - Company Profile)</option>
+            <option value="theme-thumb-4">Preset P (Amber - Hardware / Systems)</option>
+            <option value="theme-thumb-5">Preset P (Pink - Creative Web)</option>
+            <option value="theme-thumb-6">Preset P (Hijau - IoT / Automation)</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="groupImageUrl">
+          <label for="formProjImage">URL / Path Gambar</label>
+          <input type="text" id="formProjImage" class="form-input" placeholder="assets/images/sisekolah-cover.svg atau https://...">
+          <div class="file-upload-row">
+            <span style="font-size:0.8rem; color:var(--subtle);">atau upload dari perangkat:</span>
+            <input type="file" id="formProjFile" accept="image/*" class="form-file-input">
+          </div>
+        </div>
+
+        <div class="editor-modal-footer">
+          <button type="button" class="btn btn-secondary" id="btnCancelEditor2">Batal</button>
+          <button type="submit" class="btn btn-primary" id="btnSaveProject">Simpan Proyek</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="sys-toast" id="sysToast" role="status" aria-live="polite"></div>
+
+  <!-- Gallery Data JSON for Lightbox Navigation -->
+  <script type="application/json" id="galleryData">
+[
+    {
+        "title": "SI-BARANG — Sistem Informasi Inventaris Barang",
+        "tag": "WEB APPLICATION / PHP & MYSQL",
+        "image_url": "assets/images/sibarang-cover.svg",
+        "description": "Dashboard manajemen inventaris dengan kontrol akses role-based (Superadmin, Admin, Staff), kalkulasi transaksi stok otomatis, rollback safety, dan dokumen laporan siap cetak."
+    },
+    {
+        "title": "Project Beta — Digital Service Platform",
+        "tag": "DIGITAL SERVICE / JAVASCRIPT & UX",
+        "image_url": "assets/images/project-beta-cover.svg",
+        "description": "Platform layanan digital yang fokus pada alur pengguna sederhana, responsive UI, performa cepat, dan aksesibilitas tinggi."
+    },
+    {
+        "title": "Project Gamma — Company Profile & SEO",
+        "tag": "COMPANY PROFILE / HTML, CSS & SEO",
+        "image_url": "assets/images/project-gamma-cover.svg",
+        "description": "Website company profile responsif dengan struktur konten yang mudah dirawat, kecepatan loading optimal, dan ramah mesin pencari."
+    }
+]
+</script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

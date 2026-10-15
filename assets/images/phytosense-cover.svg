@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phytoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1914"/>
+      <stop offset="100%" stop-color="#112b20"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#phytoBg)"/>
+
+  <!-- Hydroponics / Greenhouse Visual -->
+  <circle cx="400" cy="240" r="140" fill="rgba(52, 211, 153, 0.08)"/>
+
+  <!-- Plant / Sprout Symbol -->
+  <g transform="translate(400, 230) scale(1.6)">
+    <path d="M 0 30 C 0 0, -25 -20, -35 -10 C -45 0, -25 30, 0 30 Z" fill="#34d399"/>
+    <path d="M 0 30 C 0 -15, 30 -35, 40 -20 C 50 -5, 25 30, 0 30 Z" fill="#4ade80"/>
+    <path d="M 0 30 L 0 55" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Reservoir Container Base -->
+  <rect x="250" y="320" width="300" height="70" rx="14" fill="#143326" stroke="#34d399" stroke-width="2"/>
+  
+  <!-- Waves in water -->
+  <path d="M 265 350 Q 325 342, 385 350 T 505 350 T 535 350" fill="none" stroke="rgba(56, 189, 248, 0.6)" stroke-width="2"/>
+  <text x="400" y="375" text-anchor="middle" fill="#86efac" font-family="Inter, sans-serif" font-size="12" font-weight="800">NUTRIENT RESERVOIR // pH 6.1 • EC 1.8</text>
+
+  <!-- Top Banner -->
+  <rect x="240" y="40" width="320" height="34" rx="17" fill="rgba(19, 48, 36, 0.95)" stroke="rgba(52, 211, 153, 0.3)"/>
+  <text x="400" y="61" text-anchor="middle" fill="#34d399" font-family="Inter, sans-serif" font-size="11" font-weight="800">PHYTOSENSE // HYDROPONIC AUTOMATION</text>
+</svg>

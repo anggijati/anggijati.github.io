@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091322"/>
+      <stop offset="100%" stop-color="#0f213d"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38a8e8"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="500"/>
+    <line x1="320" y1="0" x2="320" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="640" y1="0" x2="640" y2="500"/>
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="240" r="160" fill="rgba(56, 168, 232, 0.12)" filter="blur(40px)"/>
+
+  <!-- Inventory App Mockup Window -->
+  <rect x="120" y="70" width="560" height="360" rx="16" fill="url(#boxGrad)" stroke="rgba(148, 163, 184, 0.25)" stroke-width="1.5"/>
+
+  <!-- Window Header -->
+  <path d="M 120 86 A 16 16 0 0 1 136 70 L 664 70 A 16 16 0 0 1 680 86 L 680 115 L 120 115 Z" fill="#182234"/>
+  <line x1="120" y1="115" x2="680" y2="115" stroke="rgba(255,255,255,0.08)"/>
+
+  <!-- Window Dots -->
+  <circle cx="150" cy="92" r="5" fill="#fb7185"/>
+  <circle cx="168" cy="92" r="5" fill="#facc15"/>
+  <circle cx="186" cy="92" r="5" fill="#34d399"/>
+  <text x="210" y="96" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="11" font-weight="700">SI-BARANG // Inventory Management Console</text>
+
+  <!-- Sidebar -->
+  <rect x="120" y="115" width="130" height="315" fill="#0d1726" opacity="0.6"/>
+  <rect x="138" y="140" width="94" height="24" rx="6" fill="rgba(56, 168, 232, 0.15)"/>
+  <text x="150" y="156" fill="#38a8e8" font-family="Inter, sans-serif" font-size="11" font-weight="700">Dashboard</text>
+  <rect x="138" y="174" width="94" height="18" rx="4" fill="rgba(255,255,255,0.05)"/>
+  <rect x="138" y="200" width="94" height="18" rx="4" fill="rgba(255,255,255,0.05)"/>
+  <rect x="138" y="226" width="94" height="18" rx="4" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- Stat Widgets -->
+  <g transform="translate(270, 138)">
+    <rect width="120" height="65" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="14" y="24" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="10" font-weight="700">TOTAL STOK</text>
+    <text x="14" y="50" fill="#f8fafc" font-family="Inter, sans-serif" font-size="20" font-weight="800">4,892</text>
+  </g>
+  <g transform="translate(405, 138)">
+    <rect width="120" height="65" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="14" y="24" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="10" font-weight="700">BARANG MASUK</text>
+    <text x="14" y="50" fill="#34d399" font-family="Inter, sans-serif" font-size="20" font-weight="800">+342</text>
+  </g>
+  <g transform="translate(540, 138)">
+    <rect width="120" height="65" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="14" y="24" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="10" font-weight="700">BARANG KELUAR</text>
+    <text x="14" y="50" fill="#fb7185" font-family="Inter, sans-serif" font-size="20" font-weight="800">-128</text>
+  </g>
+
+  <!-- Inventory Data Table Mockup -->
+  <g transform="translate(270, 220)">
+    <rect width="390" height="185" rx="8" fill="#141e30" stroke="rgba(255,255,255,0.06)"/>
+    
+    <!-- Table Header -->
+    <rect width="390" height="30" rx="8" fill="#1a263c"/>
+    <text x="16" y="20" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="10" font-weight="700">KODE</text>
+    <text x="95" y="20" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="10" font-weight="700">NAMA BARANG</text>
+    <text x="230" y="20" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="10" font-weight="700">KATEGORI</text>
+    <text x="325" y="20" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="10" font-weight="700">STATUS</text>
+
+    <!-- Row 1 -->
+    <text x="16" y="55" fill="#38a8e8" font-family="Inter, sans-serif" font-size="10" font-weight="700">BRG-001</text>
+    <text x="95" y="55" fill="#f8fafc" font-family="Inter, sans-serif" font-size="10">Router MikroTik RB750</text>
+    <text x="230" y="55" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Networking</text>
+    <rect x="325" y="44" width="50" height="16" rx="8" fill="rgba(52, 211, 153, 0.2)"/>
+    <text x="335" y="55" fill="#34d399" font-family="Inter, sans-serif" font-size="9" font-weight="700">Tersedia</text>
+
+    <!-- Row 2 -->
+    <line x1="16" y1="70" x2="374" y2="70" stroke="rgba(255,255,255,0.04)"/>
+    <text x="16" y="90" fill="#38a8e8" font-family="Inter, sans-serif" font-size="10" font-weight="700">BRG-002</text>
+    <text x="95" y="90" fill="#f8fafc" font-family="Inter, sans-serif" font-size="10">Switch Hub 24-Port</text>
+    <text x="230" y="90" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Hardware</text>
+    <rect x="325" y="79" width="50" height="16" rx="8" fill="rgba(52, 211, 153, 0.2)"/>
+    <text x="335" y="90" fill="#34d399" font-family="Inter, sans-serif" font-size="9" font-weight="700">Tersedia</text>
+
+    <!-- Row 3 -->
+    <line x1="16" y1="105" x2="374" y2="105" stroke="rgba(255,255,255,0.04)"/>
+    <text x="16" y="125" fill="#38a8e8" font-family="Inter, sans-serif" font-size="10" font-weight="700">BRG-003</text>
+    <text x="95" y="125" fill="#f8fafc" font-family="Inter, sans-serif" font-size="10">Access Point WiFi 6</text>
+    <text x="230" y="125" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Wireless</text>
+    <rect x="325" y="114" width="50" height="16" rx="8" fill="rgba(251, 113, 133, 0.2)"/>
+    <text x="335" y="125" fill="#fb7185" font-family="Inter, sans-serif" font-size="9" font-weight="700">Restock</text>
+
+    <!-- Row 4 -->
+    <line x1="16" y1="140" x2="374" y2="140" stroke="rgba(255,255,255,0.04)"/>
+    <text x="16" y="160" fill="#38a8e8" font-family="Inter, sans-serif" font-size="10" font-weight="700">BRG-004</text>
+    <text x="95" y="160" fill="#f8fafc" font-family="Inter, sans-serif" font-size="10">Kabel UTP Cat6 305M</text>
+    <text x="230" y="160" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Kabel</text>
+    <rect x="325" y="149" width="50" height="16" rx="8" fill="rgba(52, 211, 153, 0.2)"/>
+    <text x="335" y="160" fill="#34d399" font-family="Inter, sans-serif" font-size="9" font-weight="700">Tersedia</text>
+  </g>
+</svg>

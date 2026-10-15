@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cloudBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1424"/>
+      <stop offset="100%" stop-color="#15223c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cloudBg)"/>
+
+  <!-- Server Rack Frame -->
+  <rect x="220" y="80" width="360" height="340" rx="18" fill="#131b2e" stroke="rgba(148, 163, 184, 0.25)" stroke-width="2"/>
+  
+  <!-- Rack Units -->
+  <!-- Unit 1: K3s Master -->
+  <g transform="translate(240, 105)">
+    <rect width="320" height="50" rx="8" fill="#1a253e" stroke="rgba(56, 168, 232, 0.3)"/>
+    <circle cx="20" cy="25" r="4" fill="#34d399"/>
+    <circle cx="32" cy="25" r="4" fill="#38a8e8"/>
+    <text x="50" y="29" fill="#f8fafc" font-family="Inter, sans-serif" font-size="12" font-weight="800">MASTER-NODE // K3s Orchestrator</text>
+    <text x="260" y="29" fill="#38a8e8" font-family="Inter, sans-serif" font-size="10" font-weight="700">64GB ECC</text>
+  </g>
+
+  <!-- Unit 2: Worker A -->
+  <g transform="translate(240, 165)">
+    <rect width="320" height="50" rx="8" fill="#1a253e" stroke="rgba(255, 255, 255, 0.08)"/>
+    <circle cx="20" cy="25" r="4" fill="#34d399"/>
+    <circle cx="32" cy="25" r="4" fill="#34d399"/>
+    <text x="50" y="29" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12" font-weight="800">WORKER-ALPHA // Microservices</text>
+    <text x="270" y="29" fill="#34d399" font-family="Inter, sans-serif" font-size="10" font-weight="700">CPU 12%</text>
+  </g>
+
+  <!-- Unit 3: Worker B -->
+  <g transform="translate(240, 225)">
+    <rect width="320" height="50" rx="8" fill="#1a253e" stroke="rgba(255, 255, 255, 0.08)"/>
+    <circle cx="20" cy="25" r="4" fill="#34d399"/>
+    <circle cx="32" cy="25" r="4" fill="#34d399"/>
+    <text x="50" y="29" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12" font-weight="800">WORKER-BETA // Ceph NVMe Mesh</text>
+    <text x="265" y="29" fill="#34d399" font-family="Inter, sans-serif" font-size="10" font-weight="700">4TB NVMe</text>
+  </g>
+
+  <!-- Unit 4: Network Gateway -->
+  <g transform="translate(240, 285)">
+    <rect width="320" height="50" rx="8" fill="#1a253e" stroke="rgba(255, 255, 255, 0.08)"/>
+    <circle cx="20" cy="25" r="4" fill="#38a8e8"/>
+    <circle cx="32" cy="25" r="4" fill="#38a8e8"/>
+    <text x="50" y="29" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12" font-weight="800">GATEWAY // WireGuard + Nginx</text>
+    <text x="270" y="29" fill="#38a8e8" font-family="Inter, sans-serif" font-size="10" font-weight="700">10 GbE</text>
+  </g>
+
+  <!-- Unit 5: Battery / UPS -->
+  <g transform="translate(240, 345)">
+    <rect width="320" height="50" rx="8" fill="#161f33" stroke="rgba(255, 255, 255, 0.05)"/>
+    <circle cx="20" cy="25" r="4" fill="#34d399"/>
+    <text x="50" y="29" fill="#8aa0b7" font-family="Inter, sans-serif" font-size="11" font-weight="700">UPS SMART-ONLINE // 1500VA</text>
+    <text x="270" y="29" fill="#34d399" font-family="Inter, sans-serif" font-size="10" font-weight="700">100% AC</text>
+  </g>
+
+  <!-- Top Title Pill -->
+  <rect x="250" y="32" width="300" height="34" rx="17" fill="rgba(19, 27, 46, 0.95)" stroke="rgba(56, 168, 232, 0.3)"/>
+  <text x="400" y="53" text-anchor="middle" fill="#38a8e8" font-family="Inter, sans-serif" font-size="11" font-weight="800">TITAN // SELF-HEALING CLUSTER</text>
+</svg>
